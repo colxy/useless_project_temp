@@ -69,8 +69,6 @@ pinMode(led2, OUTPUT);
 pinMode(led3, OUTPUT);
 ]
 
-# Run
-[commands]
 
 ### Project Documentation
 For Software:
