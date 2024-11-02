@@ -1,43 +1,73 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# parking assistance 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: colxy
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [rahul manoj kt] - [nssce]
+- Member 2: [diya rahmath] - [nssce]
+- Member 3: [anshad a] - [nssce]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+auto gate open with automatic light
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
-
+power saving
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[automated light and gate open system]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [c++]
+- [esp32]
+- [arduino ide]
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- [esp 32]
+- ultrasonic sensor 
+- [arduino ide]
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+[#include<Servo.h>
+#include <Wire.h>  // Comes with Arduino IDE
+#define echoPin 7 // Echo Pin
+#define trigPin 8 // Trigger Pin
+#define SERVO_PIN 9
+#define echopin1 2
+#define trigpin1 3
+int led1=4; 
+int led2=5;
+int led3=6;
+const int ledPin = 13; 
+Servo servo;// the pin that the LED is attached to
+
+
+
+long duration, distance; // Duration used to calculate distance
+int sensorCounter = 0;   // counter for the number of button presses
+int lastsensorDistance = 0;
+int setCounter = 20;
+int incomingByte;
+int hi=sensorCounter;
+
+void setup() {
+ Serial.begin (9600);
+
+ pinMode(trigPin, OUTPUT);
+ pinMode(echoPin, INPUT);
+pinMode(ledPin, OUTPUT);
+ pinMode(trigpin1, OUTPUT);
+ pinMode(echopin1, INPUT);
+pinMode(led1, OUTPUT);
+pinMode(led2, OUTPUT);
+pinMode(led3, OUTPUT);
+]
 
 # Run
 [commands]
